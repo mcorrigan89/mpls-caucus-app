@@ -20,4 +20,4 @@ deploy:
   local_dir: dist
   cache_control: no-cache
   on:
-    branch: release
+    tags: true
