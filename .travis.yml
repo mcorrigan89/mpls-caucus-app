@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- '7.5'
+#branches:
+#  only:
+#  - master
+before_script:
+  - npm install -g @angular/cli@latest
+  - npm install
+install:
+  - ng build -aot
+deploy:
+  provider: s3
+  access_key_id: AKIAJMRRG3BJSEQMHRSQ
+  secret_access_key:
+    secure: Li9exTSJEjIvVGIpCg9zkYpi67srF3hSpu3qh+sqB+UabA3CMaUxUeOR+GPCONAl4PtSzGoJWYdKGa7h0k9tcXLt8xqTzLAkaJmsZBVY/TwDN7Vcttoqfk4VG79m5rPjYSuV++7WKOWV0N8QDk94f7KOiouoNkVhwhNXBO98Ts32v2Lc9mhC3PcbV379W4dSWcIpcgHpOnyDikeQIruMO+VHMWHkBLLcgNvM7LDrpjNQAo2Eloj2fglvxdTNaAVCLyC0P/QxUmebPxYTMRYyKhBsYK/1NwYnR8r5fhtM/7wIFzamOK46WpDfj5tCKuRaDxIPi1vpChZBXn3rNnR4WiaDyPm5t5IjUK2OZktGY8m/7fb9hhutL5u5abDeXnh2pTmlZi/ZrDYo7TFXv9e2nLzndxQ7T7DsV5zkIVw/ESwwQznwxB2RSkETlREkjgKJi7/HrdFR6oxzyJn5DwMtn6ChFtbrZmEUFfVCr+1L4pQbsHidXUyVxa1sxlQ6q96/MdTxMI9c99ghDKEEhzUs9rvB5DzSLow2B7aNh8rSXOgBtUYc8Mf8xo7SH5zD9cExrjrJoEcYFsHI5bOYwo0h5W9vSFqbpxTsmrndLJl1759/cjzobkHGw9hOJHrUhW8AnjYhGw7/Lky98YPm9C4ffb6vcTvjIhuiDVYh0tFJCZI=
+  bucket: mplscaucusapp
+  skip_cleanup: true
+  region: us-east-1
+  acl: public_read
+  local_dir: dist
+  cache_control: no-cache
