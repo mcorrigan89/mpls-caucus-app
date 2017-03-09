@@ -1,9 +1,9 @@
 language: node_js
 node_js:
 - '7.5'
-#branches:
-#  only:
-#  - master
+branches:
+  only:
+  - master
 install:
   - npm install -g @angular/cli@latest
   - npm install
