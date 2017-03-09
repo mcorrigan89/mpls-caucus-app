@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-block">
+    <h4 class="card-title">Precinct Registration for {{precinct.Precinct}}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Serving address: {{address.address}}</h6>
+    <br>
+    <a *ngIf="event" [href]="event" target="_blank" class="btn submit-button">Register Now!</a>
+    <div *ngIf="!event">
+      <h6 class="card-subtitle mb-2">Unfortuantely events are only open for online registration with Minneapolis</h6>
+      <a href="http://pollfinder.sos.state.mn.us/" target="_blank" class="btn submit-button">Find your polling place here!</a>
+    </div>
+    <br>
+    <button *ngIf="!showInfo" class="btn btn-link show-more" (click)="showExtraPrecinctInfo()">Show More Info</button>
+    <button *ngIf="showInfo" class="btn btn-link show-more" (click)="showExtraPrecinctInfo()">Show Less Info</button>
+    <div *ngIf="showInfo">
+      <h6 class="card-subtitle mb-2 text-muted">Precinct Information</h6>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Precinct ID: {{precinct.PrecinctID}}</li>
+        <li class="list-group-item">County: {{precinct.County}}</li>
+        <li class="list-group-item">County ID: {{precinct.CountyID}}</li>
+        <li class="list-group-item">Congressional Distrect: {{precinct.CongDist}}</li>
+        <li class="list-group-item">Minnesota Senate District: {{precinct.MNSenDist}}</li>
+        <li class="list-group-item">Minnesota Legislature District: {{precinct.MNLegDist}}</li>
+        <li class="list-group-item">City Commissioner District{{precinct.CtyComDist}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

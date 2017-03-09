@@ -1,0 +1,73 @@
+<div class="container">
+<form (ngSubmit)="onSubmit()" #precinctForm="ngForm">
+  <div class="row">
+    <div class="col-md-6 form-group">
+      <label for="address1">Address 1</label>
+        <input
+          required
+          [(ngModel)]="form.address1"
+          #address1="ngModel"
+          id="address1"
+          name="address1"
+          class="form-control"
+          type="text"
+          autocomplete="address-line1" />
+      <div [hidden]="address1.valid || address1.pristine"
+           class="alert alert-danger">
+        Address is required
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="address2">Address 2</label>
+        <input
+          [(ngModel)]="form.address2"
+          id="address2"
+          name="address2"
+          class="form-control"
+          type="text"
+          autocomplete="address-line2" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <label for="city">City</label>
+        <input
+          required
+          [(ngModel)]="form.city"
+          #city="ngModel"
+          id="city"
+          name="city"
+          class="form-control"
+          type="text"
+          autocomplete="address-line3" />
+      <div [hidden]="city.valid || city.pristine"
+           class="alert alert-danger">
+        City is required
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label for="zip">Zip Code</label>
+        <input
+          required
+          [(ngModel)]="form.zip"
+          #zip="ngModel"
+          id="zip"
+          name="zip"
+          class="form-control"
+          type="number"
+          autocomplete="postal-code" />
+      <div [hidden]="zip.valid || zip.pristine"
+           class="alert alert-danger">
+        Zip Code is required
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button *ngIf="!submitted" class="btn submit-button" type="submit" [disabled]="!precinctForm.form.valid">Find Precinct</button>
+      <button *ngIf="submitted" class="btn btn-link try-again" (click)="retry();precinctForm.reset() ">Try a new address</button>
+    </div>
+  </div>
+</form>
+</div>

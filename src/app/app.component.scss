@@ -1,0 +1,51 @@
+.container {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  //max-width: 964px;
+}
+
+.main {
+  min-height: 450px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #bbbbbb;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .main {
+    min-height: 800px;
+  }
+}
+
+.main-nav {
+  background: linear-gradient(#1F5D8E, #0E315E);
+  height: 50px;
+}
+
+@media (max-width: 600px) {
+  .main-nav {
+    height: 100px;
+  }
+}
+
+.header-info {
+  color: #fff;
+  margin-left: 15px;
+  vertical-align: text-bottom;
+  font-size: 16pt;
+  line-height: 2.4;
+  font-weight: 600;
+}
+
+.main-content {
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.map-padding {
+  margin-top: 40px;
+}

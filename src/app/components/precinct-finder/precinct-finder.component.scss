@@ -1,0 +1,27 @@
+.submit-button {
+  margin-top: 24px;
+  font-size: 18pt;
+  float: right;
+  background-color: #00AAE5;
+  border-color: #0097cc;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #CE382F;
+    border-color: #bc3029;
+  }
+
+  &[disabled] {
+    background-color: #bbbbbb;
+    border-color: #bbbbbb;
+    cursor: not-allowed;
+  }
+}
+
+.try-again {
+  width: 100%;
+  text-align: center;
+}
