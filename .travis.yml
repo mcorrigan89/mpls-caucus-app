@@ -19,3 +19,5 @@ deploy:
   acl: public_read
   local_dir: dist
   cache_control: no-cache
+  on:
+    branch: release
