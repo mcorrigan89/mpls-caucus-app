@@ -13,7 +13,7 @@ Node 6 or greater
 
 ##### To Install
 
-`npm install -g @angular-cli`
+`npm install -g @angular/cli@latest`
 
 `npm install`
 
