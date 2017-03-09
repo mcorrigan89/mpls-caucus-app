@@ -4,10 +4,9 @@ node_js:
 #branches:
 #  only:
 #  - master
-before_script:
+install:
   - npm install -g @angular/cli@latest
   - npm install
-install:
   - ng build -aot
 deploy:
   provider: s3
