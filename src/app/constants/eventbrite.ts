@@ -27,7 +27,7 @@ export let eventData = {"Minneapolis W-1 P-1":"https://www.eventbrite.com/e/2017
 "Minneapolis W-3 P-6":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-6-tickets-32520090466",
 "Minneapolis W-3 P-7":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-7-tickets-32520140616",
 "Minneapolis W-3 P-8":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-8-tickets-32520173715",
-"Minneapolis W-3 P-9":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-9-tickets-32520224",
+"Minneapolis W-3 P-9":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-9-tickets-32520224868",
 "Minneapolis W-3 P-10":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-10-tickets-32520269000",
 "Minneapolis W-3 P-11":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-11-tickets-32520325168",
 "Minneapolis W-3 P-12":"https://www.eventbrite.com/e/2017-caucus-for-ward-3-precinct-12-tickets-32520374315",
